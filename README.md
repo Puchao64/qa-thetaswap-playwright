@@ -3,13 +3,19 @@
 ## Description
 This repository contains Playwright UI tests for the ThetaSwap swap page.
 
+## Tech Stack
+- Playwright
+- JavaScript
+- Node.js
+
 ## Covered Scenarios
-1. Search input should not break UI when space is entered
-2. Swap page should display main UI elements
-3. Swap button should be disabled without amount
+1. Validate search input handling with edge case (space input)
+2. Verify main swap page UI elements are rendered correctly
+3. Ensure swap button is disabled when required input is missing
 
 ## Project Structure
-- tests/search-space.spec.js — Playwright tests
+- tests/ — contains Playwright test files
+  - search-space.spec.js — UI tests for search input and swap behavior
 
 ## Setup
 npm install  
@@ -21,7 +27,3 @@ npx playwright test tests/search-space.spec.js
 ## Notes
 These tests validate UI stability, input handling, and basic swap functionality.
 
-## Tech Stack
-- Playwright
-- JavaScript
-- Node.js
