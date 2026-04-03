@@ -20,3 +20,8 @@ npx playwright test tests/search-space.spec.js
 
 ## Notes
 These tests validate UI stability, input handling, and basic swap functionality.
+
+## Tech Stack
+- Playwright
+- JavaScript
+- Node.js
