@@ -11,7 +11,7 @@ This repository contains Playwright UI tests for the ThetaSwap swap page.
 ## Covered Scenarios
 1. Validate search input handling with edge case (space input)
 2. Verify main swap page UI elements are rendered correctly
-3. Ensure swap button is disabled when required input is missing
+
 
 ## Project Structure
 - tests/ — contains Playwright test files
