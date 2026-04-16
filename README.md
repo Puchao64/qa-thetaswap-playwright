@@ -1,28 +1,96 @@
-# ThetaSwap UI Automation Test
+# 🧪 ThetaSwap UI Automation (Playwright)
 
-## Description
-This repository contains Playwright UI tests for the ThetaSwap swap page.
+[![CI](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/Puchao64/qa-thetaswap-playwright/actions)
 
-## Tech Stack
+End-to-end UI automation tests for a token swap interface using Playwright.
+
+---
+
+## 🚀 Project Overview
+
+This project validates core UI behavior of a swap interface: input handling, edge cases, and basic interaction logic.  
+It reflects a QA approach focused on UI stability, incorrect user input, and consistent behavior of critical elements.
+
+---
+
+## 🧠 QA Approach
+
+- validate user input (including edge cases like space-only input)
+- ensure correct rendering of key UI elements
+- verify stability under invalid input
+- check basic interaction flow of the swap page
+
+Scenarios are based on typical risks:
+- incorrect or unexpected user input
+- UI inconsistencies
+- missing or broken elements
+
+---
+
+## 🛠 Tech Stack
+
 - Playwright
 - JavaScript
 - Node.js
+- GitHub Actions (CI)
 
-## Covered Scenarios
-1. Validate search input handling with edge case (space input)
-2. Verify main swap page UI elements are rendered correctly
+---
 
+## 🔄 Continuous Integration
 
-## Project Structure
-- tests/ — contains Playwright test files
-  - search-space.spec.js — UI tests for search input and swap behavior
+Tests run automatically via GitHub Actions.
 
-## Setup
-npm install  
+CI workflow:
+- install dependencies
+- install Playwright browsers
+- run UI tests
+
+Platforms:
+- Linux
+- Windows
+- macOS
+
+Triggers:
+- push to main
+- pull requests
+
+---
+
+## 📂 Project Structure
+
+```
+tests/
+└── search-space.spec.js
+```
+
+---
+
+## ✅ Test Coverage
+
+Input Validation:
+- space-only input handling
+- invalid user input validation
+
+UI Rendering:
+- swap page loads correctly
+- key UI elements are visible and stable
+
+---
+
+## ▶️ How to Run Tests
+
+```
+npm install
 npx playwright install
-
-## Run Tests
 npx playwright test tests/search-space.spec.js
+```
 
-## Notes
-These tests validate UI stability, input handling, and main swap page elements.
+---
+
+## 🎯 Purpose
+
+- UI automation with Playwright
+- edge case and invalid input handling
+- basic QA test design
+- clean project structure
+- multi-platform CI execution
