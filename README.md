@@ -1,6 +1,6 @@
 # 🧪 ThetaSwap UI Automation (Playwright)
 
-[![CI](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/Puchao64/qa-thetaswap-playwright/actions)
+[![Playwright Cross-Platform Tests](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/main.yml/badge.svg)](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/main.yml)
 
 End-to-end UI automation tests for a token swap interface using Playwright.
 
