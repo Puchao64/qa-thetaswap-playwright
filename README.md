@@ -2,23 +2,21 @@
 
 [![Playwright Cross-Platform Tests](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/main.yml/badge.svg)](https://github.com/Puchao64/qa-thetaswap-playwright/actions/workflows/main.yml)
 
-End-to-end UI automation tests for a token swap interface using Playwright.
+UI automation tests for the live [ThetaSwap](https://thetaswap.org/swap) swap page using Playwright.
 
 ---
 
 ## 🚀 Project Overview
 
-This project validates core UI behavior of a swap interface: input handling, edge cases, and basic interaction logic.  
-It reflects a QA approach focused on UI stability, incorrect user input, and consistent behavior of critical elements.
+This project checks that the swap page renders its key elements and that the token search input stays stable when it receives unexpected input.  
+It is a small suite focused on UI stability and cross-platform CI execution.
 
 ---
 
 ## 🧠 QA Approach
 
-- validate user input (including edge cases like space-only input)
-- ensure correct rendering of key UI elements
-- verify stability under invalid input
-- check basic interaction flow of the swap page
+- check that key UI elements of the swap page render correctly
+- verify that the token search input does not break the UI when it receives a trailing space
 
 Scenarios are based on typical risks:
 - incorrect or unexpected user input
@@ -51,7 +49,7 @@ Platforms:
 - macOS
 
 Triggers:
-- push to main
+- every push
 - pull requests
 
 ---
@@ -67,13 +65,12 @@ tests/
 
 ## ✅ Test Coverage
 
-Input Validation:
-- space-only input handling
-- invalid user input validation
+Input handling:
+- token search input with a trailing space does not break the swap page
 
 UI Rendering:
-- swap page loads correctly
-- key UI elements are visible and stable
+- swap page loads at the correct URL
+- title, token search input and token selector are visible
 
 ---
 
