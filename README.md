@@ -66,11 +66,11 @@ tests/
 ## ✅ Test Coverage
 
 Input handling:
-- token search input with a trailing space does not break the swap page
+- typing "BTC" plus a space into the token search input does not break the swap form
 
 UI Rendering:
 - swap page loads at the correct URL
-- title, token search input and token selector are visible
+- token search input, "You pay" / "You receive" fields, amount input and Connect wallet button are visible
 
 ---
 
